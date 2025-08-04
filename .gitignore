@@ -1,0 +1,72 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+.expo
+.tmp
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Dependency directories
+node_modules/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# favorites vscode extension config file
+.favorites.json
+
+# Mac OS X DS_STORE
+.DS_Store
+
+**/*firebase-adminsdk*.json
+
+# Compiled JavaScript files
+**/*.js.map
+
+# Except the ESLint config file
+!.eslintrc.js
+
+# TypeScript v1 declaration files
+typings/
+
+# Node.js dependency directory
+node_modules/
+
+functions/lib/
+
+*.tar.gz
+
+**/firebase-export/**/*
+
+**/__local__*
+
+apps/**/dist/

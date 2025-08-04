@@ -1,0 +1,88 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@jlarky/nanoid@^0.0.2": "0.0.2",
+    "jsr:@std/assert@1": "1.0.13",
+    "jsr:@std/internal@^1.0.6": "1.0.6",
+    "npm:@reduxjs/toolkit@^2.8.2": "2.8.2_redux@5.0.1",
+    "npm:@types/lodash@^4.17.20": "4.17.20",
+    "npm:immer@^10.1.1": "10.1.1",
+    "npm:lodash@*": "4.17.21",
+    "npm:lodash@^4.17.21": "4.17.21",
+    "npm:redux-thunk@^3.1.0": "3.1.0_redux@5.0.1",
+    "npm:redux@^5.0.1": "5.0.1",
+    "npm:reselect@^5.1.1": "5.1.1",
+    "npm:zustand@^5.0.7": "5.0.7"
+  },
+  "jsr": {
+    "@jlarky/nanoid@0.0.2": {
+      "integrity": "6246747f6f43f4ec7a2f39b0bf77411a55be5d57c97e212d91486b55f3bc3a12"
+    },
+    "@std/assert@1.0.13": {
+      "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.6": {
+      "integrity": "9533b128f230f73bd209408bb07a4b12f8d4255ab2a4d22a1fd6d87304aca9a4"
+    }
+  },
+  "npm": {
+    "@reduxjs/toolkit@2.8.2_redux@5.0.1": {
+      "integrity": "sha512-MYlOhQ0sLdw4ud48FoC5w0dH9VfWQjtCjreKwYTT3l+r427qYC5Y8PihNutepr8XrNaBUDQo9khWUwQxZaqt5A==",
+      "dependencies": [
+        "@standard-schema/spec",
+        "@standard-schema/utils",
+        "immer",
+        "redux",
+        "redux-thunk",
+        "reselect"
+      ]
+    },
+    "@standard-schema/spec@1.0.0": {
+      "integrity": "sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA=="
+    },
+    "@standard-schema/utils@0.3.0": {
+      "integrity": "sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g=="
+    },
+    "@types/lodash@4.17.20": {
+      "integrity": "sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA=="
+    },
+    "immer@10.1.1": {
+      "integrity": "sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw=="
+    },
+    "lodash@4.17.21": {
+      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
+    },
+    "redux-thunk@3.1.0_redux@5.0.1": {
+      "integrity": "sha512-NW2r5T6ksUKXCabzhL9z+h206HQw/NJkcLm1GPImRQ8IzfXwRGqjVhKJGauHirT0DAuyy6hjdnMZaRoAcy0Klw==",
+      "dependencies": [
+        "redux"
+      ]
+    },
+    "redux@5.0.1": {
+      "integrity": "sha512-M9/ELqF6fy8FwmkpnF0S3YKOqMyoWJ4+CS5Efg2ct3oY9daQvd/Pc71FpGZsVsbl3Cpb+IIcjBDUnnyBdQbq4w=="
+    },
+    "reselect@5.1.1": {
+      "integrity": "sha512-K/BG6eIky/SBpzfHZv/dd+9JBFiS4SWV7FIujVyJRux6e45+73RaUHXLmIR1f7WOMaQ0U1km6qwklRQxpJJY0w=="
+    },
+    "zustand@5.0.7": {
+      "integrity": "sha512-Ot6uqHDW/O2VdYsKLLU8GQu8sCOM1LcoE8RwvLv9uuRT9s6SOHCKs0ZEOhxg+I1Ld+A1Q5lwx+UlKXXUoCZITg=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@jlarky/nanoid@^0.0.2",
+      "jsr:@std/assert@1",
+      "npm:@reduxjs/toolkit@^2.8.2",
+      "npm:@types/lodash@^4.17.20",
+      "npm:immer@^10.1.1",
+      "npm:lodash@^4.17.21",
+      "npm:redux-thunk@^3.1.0",
+      "npm:redux@^5.0.1",
+      "npm:reselect@^5.1.1",
+      "npm:zustand@^5.0.7"
+    ]
+  }
+}
