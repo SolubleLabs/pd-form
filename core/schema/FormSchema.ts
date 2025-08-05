@@ -20,6 +20,7 @@ import {
   Overridable,
   RuleAction,
 } from "./types.ts";
+import { Dictionary } from "lodash";
 
 export default class FormSchema<
   B extends Builder<

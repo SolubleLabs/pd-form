@@ -50,16 +50,11 @@ const fieldStateSlice = createSlice({
       state.touched = action.payload;
     },
   },
-  extraReducers: {
-    "@form/viewer/setFieldValue": (
-      state,
-      action: ReturnType<typeof setFieldValue>
-    ) => {
-      const {
-        payload: { fieldId },
-      } = action;
+  extraReducers: (builder) => {
+    builder.addCase(setFieldValue, (state, action) => {
+      const { fieldId } = action.payload;
       state.touched[fieldId] = true;
-    },
+    });
   },
 });
 

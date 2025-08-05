@@ -1,17 +1,17 @@
-import { ActionTypes } from "../schemas.ts";
-import * as Actions from "./actions.ts";
-import { initialState, ViewerFormData } from "./types.ts";
+import { setFieldValue, clearValue } from "./actions";
+import { ViewerFormData, initialState } from "./types";
+
+type ViewerActions =
+  | ReturnType<typeof setFieldValue>
+  | ReturnType<typeof clearValue>;
 
 export default function viewerFormReducer(
-  state = initialState,
-  action: ActionTypes<typeof Actions>
+  state: ViewerFormData = initialState,
+  action: ViewerActions
 ): ViewerFormData {
-  switch (action.type) {
-    case "@form/viewer/setFieldValue": {
-      const { fieldId, value } = action.payload;
-      return { ...state, [fieldId]: value };
-    }
-    default:
-      return state;
+  if (setFieldValue.match(action)) {
+    const { fieldId, value } = action.payload;
+    return { ...state, [fieldId]: value };
   }
+  return state;
 }
