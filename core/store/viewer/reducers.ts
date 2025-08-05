@@ -12,6 +12,10 @@ export default function viewerFormReducer(
   if (setFieldValue.match(action)) {
     const { fieldId, value } = action.payload;
     return { ...state, [fieldId]: value };
+  } else if (clearValue.match(action)) {
+    const { fieldId } = action.payload;
+    const { [fieldId]: _, ...rest } = state;
+    return rest;
   }
   return state;
 }

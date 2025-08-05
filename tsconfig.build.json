@@ -1,12 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
+    "rootDir": "core",
     "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": false, // library bundles rarely need JS source maps
-    "noEmit": false // override the base config
-  },
-  "include": ["src/**/*.ts", "types/**/*.d.ts"]
+    "sourceMap": false,
+    "noEmit": false
+  }
 }
