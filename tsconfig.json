@@ -19,6 +19,6 @@
     "resolveJsonModule": true
   },
   "compileOnSave": true,
-  "include": ["**/*.ts", "types/**/*.d.ts"],
+  "include": ["**/*.ts", "**/*.d.ts"],
   "exclude": ["node_modules"]
 }

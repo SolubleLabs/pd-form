@@ -2,12 +2,22 @@
   "name": "pd-form-core",
   "version": "1.0.0",
   "description": "Form builder and schema library",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node main.ts",
-    "prepublishOnly": "npm run build"
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "dev": "ts-node core/main.ts",
+    "prepublishOnly": "npm run typecheck && npm run build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -23,6 +33,7 @@
     "@types/lodash": "^4.17.20",
     "@types/node": "^24.2.0",
     "ts-node": "^10.9.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.0.0"
   }
 }
