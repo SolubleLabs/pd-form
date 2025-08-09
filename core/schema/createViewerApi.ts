@@ -12,9 +12,9 @@ export function createViewerApi<V = any>(
     fieldId,
     sectionIndex,
     setValue: (value: V) => {
-      dispatch(viewerActions.setFieldValue(fieldId, value));
+      dispatch(viewerActions.setFieldValue({ fieldId, value }));
     },
-    clearValue: () => dispatch(viewerActions.clearValue(fieldId)),
+    clearValue: () => dispatch(viewerActions.clearValue({ fieldId })),
     handleBlur: () => dispatch(viewerFieldActions.touch(fieldId)),
   };
 }

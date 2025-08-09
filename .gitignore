@@ -70,3 +70,7 @@ functions/lib/
 **/__local__*
 
 apps/**/dist/
+
+out.txt
+dist
+*.zip

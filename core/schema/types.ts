@@ -2,6 +2,7 @@ import { Draft } from "immer";
 import { Action } from "redux";
 import { EditorState } from "../store/editor/types.ts";
 import { ViewerFieldState } from "../store/viewer/fieldStateSlice.ts";
+import { Dictionary } from "lodash";
 
 export type FormSection = {
   sectionTitle: string;

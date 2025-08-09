@@ -1,6 +1,6 @@
 // @deno-types="npm:@types/lodash"
 import _ from "lodash";
-import { nanoid } from "@jlarky/nanoid";
+import { nanoid } from "nanoid/non-secure";
 import { Action, Reducer } from "redux";
 import {
   FormSection,
